@@ -1,6 +1,6 @@
 function getComputerChoice (){
     let computerChoice = ["Rock", "Paper", "Scissor"];
-    return computerChoice = computerChoice[Math.floor(Math.random()*computerChoice.length)];
+    return computerChoice [Math.floor(Math.random()*computerChoice.length)];
 }
 
 function playerSelection(){
