@@ -22,7 +22,7 @@ if (playerSelection == 1 && getComputerChoice == 2){
     else if (playerSelection == getComputerChoice){
         console.log("Draw!");
     }
-    else (){
+    else{
         console.log("You Win!");
     }
     
