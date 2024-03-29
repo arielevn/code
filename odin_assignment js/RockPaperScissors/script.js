@@ -9,20 +9,20 @@ function playerSelection(){
 }
 <!-- return 'xyz'.localeCompare('XyZ', undefined, { sensitivity: 'base' }); // returns 0 -->
 
-function gamePlay{
-if playerSelection == 1 && getComputerChoice == 2{
+function gamePlay(){
+if (playerSelection == 1 && getComputerChoice == 2){
     console.log("You Lose! Paper beats Rock");
     }
-    else if playerSelection == 2 && getComputerChoice == 3{
+    else if (playerSelection == 2 && getComputerChoice == 3){
        console.log("You Lose! Scissor beats Paper");
     }
-    else if playerSelection == 3 && getComputerChoice == 1{
+    else if (playerSelection == 3 && getComputerChoice == 1){
         console.log("You Lose! Rock beats Paper");
     }
-    else if playerSelection == getComputerChoice{
+    else if (playerSelection == getComputerChoice){
         console.log("Draw!");
     }
-    else{
+    else (){
         console.log("You Win!");
     }
     
