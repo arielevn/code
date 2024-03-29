@@ -27,3 +27,5 @@ if (playerSelection == 1 && getComputerChoice == 2){
     }
     
 }
+
+gamePlay();
