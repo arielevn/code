@@ -7,7 +7,7 @@ function playerSelection(){
     let playerSelection = prompt("Enter your choice: ");
     return playerSelection.localeCompare(player, undefined, {sensitivity: 'base'});
 }
-<!-- return 'xyz'.localeCompare('XyZ', undefined, { sensitivity: 'base' }); // returns 0 -->
+// return 'xyz'.localeCompare('XyZ', undefined, { sensitivity: 'base' }); // returns 0 -->
 
 function gamePlay(){
 if (playerSelection == 1 && getComputerChoice == 2){
