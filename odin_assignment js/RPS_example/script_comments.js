@@ -26,23 +26,23 @@ function playGame() { // initiate the game
         let playerSelection = prompt("Enter your choice (rock, paper, or scissors): "); // prompt player to enter their choice
         let computerSelection = getComputerChoice(); // GET computer choice by calling getComputerChoice function
 
-        let result = playRound(playerSelection, computerSelection);
-        console.log(result);
+        let result = playRound(playerSelection, computerSelection); // GET result
+        console.log(result); // PRINT result
 
-        if (result.startsWith("You Win!")) {
-            playerScore++;
-        } else if (result.startsWith("You Lose!")) {
-            computerScore++;
+        if (result.startsWith("You Win!")) { // GET win result
+            playerScore++; // INCREMENT player score
+        } else if (result.startsWith("You Lose!")) { // GET lose result
+            computerScore++; // INCREMENT computer result
         }
     }
 
-    if (playerScore > computerScore) {
-        console.log("You win the game with a score of " + playerScore + " to " + computerScore + "!");
-    } else if (playerScore < computerScore) {
-        console.log("You lose the game with a score of " + playerScore + " to " + computerScore + ".");
+    if (playerScore > computerScore) { // GET conditional statement when player win 
+        console.log("You win the game with a score of " + playerScore + " to " + computerScore + "!"); // PRINT win result
+    } else if (playerScore < computerScore) { // GET conditional statement when player lose
+        console.log("You lose the game with a score of " + playerScore + " to " + computerScore + "."); // PRINT lose result
     } else {
-        console.log("It's a tie! The score is " + playerScore + " to " + computerScore + ".");
+        console.log("It's a tie! The score is " + playerScore + " to " + computerScore + "."); // GET conditional statement when player tied
     }
 }
 
-playGame();
+playGame(); // COMPUTE the game
