@@ -10,9 +10,10 @@ function playround(playerSelection, computerSelection) {
     if ((playerSelection == "rock" && computerSelection == "scissors") ||
         (playerSelection == "scissors" && computerSelection == "paper") ||
         (playerSelection == "paper" && computerSelection == "rock"))
-        {return "You Win!" + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + "beats" + computerSelection.charAt(0).toUpperCase + computerSelection.slice(1)} 
+        {return "You Win!" + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + 
+        "beats" + computerSelection.charAt(0).toUpperCase + computerSelection.slice(1)}; 
         else if (playerSelection == computerSelection)
-            {return "It's a tie!"}
+            return "It's a tie!";
         else ()
-            return {"You Lose!"}
+            return "You Lose!" + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + "beats" + playerSelection.charAt(0).toUpperCase + playerSelection.slice(1);
 }
