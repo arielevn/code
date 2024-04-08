@@ -20,8 +20,12 @@ function playround(playerSelection, computerSelection) {
     }
 
 function playgame(){
-            let playerSelection = prompt("pick one of Rock, Paper, and Scissors: ");
-            
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for(i = 0, i > 5, i++){
+        let playerSelection = prompt("Enter your choice between Rock, Paper, and Scissors: ");
+    }    
 }
 
 playgame()
