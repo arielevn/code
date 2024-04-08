@@ -21,6 +21,7 @@ function playround(playerSelection, computerSelection) {
 
 function playgame(){
             let playerSelection = prompt("pick one of Rock, Paper, and Scissors: ");
+            
 }
 
 playgame()
