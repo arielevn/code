@@ -3,9 +3,9 @@ function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
-function playround(playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase(prompt("Enter: "));
-    computerSelection = computerSelection.toLowerCase(getComputerChoice());
+function playRound(playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
 
     if ((playerSelection == "rock" && computerSelection == "scissors") ||
         (playerSelection == "scissors" && computerSelection == "paper") ||
@@ -19,10 +19,14 @@ function playround(playerSelection, computerSelection) {
         }
     }
 
-function playgame(){
+function playGame(){
     for (let i = 0; i > 5; i++){
-        playround();
+        let playerSelection = prompt("Enter your choice: ");
+        let computerSelection = getComputerChoice();
+
+        let.result = playRound();
+        console.log(result);
     }
 }
 
-playgame()
+playGame()
