@@ -1,11 +1,11 @@
 function getComputerChoice() {
     let choices = ["rock", "paper", "scissors"];
-    return choices(Math.floor[Math.random() * choices.length]);
+    return choices[Math.floor(Math.random() * choices.length)];
 }
 
 function playround(playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase();
-    computerSelection = computerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase(prompt("Enter: "));
+    computerSelection = computerSelection.toLowerCase(getComputerChoice());
 
     if ((playerSelection == "rock" && computerSelection == "scissors") ||
         (playerSelection == "scissors" && computerSelection == "paper") ||
@@ -20,12 +20,9 @@ function playround(playerSelection, computerSelection) {
     }
 
 function playgame(){
-    let playerScore = 0;
-    let computerScore = 0;
-
-    for(i = 0; i > 5; i++){
-        let playerSelection = prompt("Enter your choice between Rock, Paper, and Scissors: ");
-    }    
+    for (let i = 0; i > 5; i++){
+        playround();
+    }
 }
 
 playgame()
