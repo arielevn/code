@@ -35,3 +35,10 @@ def get_water_bill(num_gallons):
     return bill
 
 # conditional statement question 4
+def get_phone_bill(gb):
+    x = gb
+    if 15 >= gb:
+        bill = 100
+    else:
+        bill = 100 + 100 * (gb - 15)
+    return bill
