@@ -25,4 +25,10 @@ def is_negative(number):
 def concise_is_negative(number):
     return number < 0
 
-#
+#exclusive or (XOR)
+def exactly_one_sauce(ketchup, mustard, onion):
+    """Return whether the customer wants either ketchup or mustard, but not both.
+    (You may be familiar with this operation under the name "exclusive or")
+    """
+    return (ketchup ^ mustard) and onion
+    pass
