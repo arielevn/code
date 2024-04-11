@@ -41,7 +41,7 @@ percentage_liked([1, 2, 3, 4, 5, 4, 5, 1])
 #question 4
 # TODO: Edit the function
 def percentage_growth(num_users, yrs_ago):
-    growth = (num_users[len(num_users)-1] - num_users[len(num_users)-yrs_ago-])/num_users[len(num_users)-2]
+    growth = (num_users[len(num_users)-1] - num_users[len(num_users)-yrs_ago-1])/num_users[len(num_users)-yrs_ago-1]
     return growth
 
 # Do not change: Variable for calculating some test examples
