@@ -44,4 +44,5 @@ def get_phone_bill(gb):
     return bill
 
 # conditional statement question 5
-get_labels("solid", 21, 68, 3, 0.2, 208, 0)
+def get_labels():
+    get_labels("solid", 21, 68, 3, 0.2, 208, 0)
