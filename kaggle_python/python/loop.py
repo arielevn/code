@@ -35,7 +35,7 @@ def menu_is_boring(meals):
     pass
 
 # exercise 4
-def estimate_average_slot_payout(n_runs):
+def play_slot_machine(n_runs):
     """Run the slot machine n_runs times and return the average net profit per run.
     Example calls (note that return value is nondeterministic!):
     >>> estimate_average_slot_payout(1)
