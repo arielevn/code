@@ -10,6 +10,12 @@ container.appendChild(content);
 
 const p = document.createElement("p");
 p.classList.add("p");
-p.textContent = "Hey I'm red!"
-container.appendChild(p)
+p.textContent = "Hey I'm red!";
+container.appendChild(p);
 p.style.color = "red";
+
+const h3 = document.createElement("h3");
+h3.classList.add("h3");
+h3.textContent = "I'm blue h3";
+container.appendChild(h3)
+h3.style.color = "blue";
