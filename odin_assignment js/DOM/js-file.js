@@ -11,5 +11,5 @@ container.appendChild(content);
 const p = document.createElement("p");
 p.classList.add("p");
 p.textContent = "Hey I'm red!"
-
 container.appendChild(p)
+p.style.color = "red";
