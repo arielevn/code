@@ -1,11 +1,9 @@
-// selects the #container div (don't worry about the syntax, we'll get there)
+@ -1,8 +0,0 @@
+// your JavaScript file
 const container = document.querySelector("#container");
 
-// selects the first child of #container => .display
-console.dir(container.firstElementChild);
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is the glorious text-content!";
 
-// selects the .controls div
-const controls = document.querySelector(".controls");
-
-// selects the prior sibling => .display
-console.dir(controls.previousElementSibling);
+container.appendChild(content);
