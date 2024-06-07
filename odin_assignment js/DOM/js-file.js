@@ -22,7 +22,7 @@ h3.style.color = "blue";
 
 const div = document.createElement("div");
 div.classList.add("div");
-container.appendChild(div);
+
 div.setAttribute("style", "border-color: blue; background: pink;");
 // div.style.borderColor("blue")
 
@@ -30,3 +30,5 @@ const h1 = document.createElement("h1");
 h1.classList.add("h1")
 div.appendChild(h1);
 h1.textContent = "I'm in div"
+
+container.appendChild(div);
