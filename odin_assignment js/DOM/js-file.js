@@ -27,8 +27,13 @@ div.setAttribute("style", "border-color: blue; background: pink;");
 // div.style.borderColor("blue")
 
 const h1 = document.createElement("h1");
-h1.classList.add("h1")
+h1.classList.add("h1");
 div.appendChild(h1);
-h1.textContent = "I'm in div"
+h1.textContent = "I'm in div";
+
+const x = document.createElement("p");
+x.classList.add("p");
+div.appendChild(x);
+x.textContent = "ME TOO!";
 
 container.appendChild(div);
