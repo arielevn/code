@@ -17,5 +17,16 @@ p.style.color = "red";
 const h3 = document.createElement("h3");
 h3.classList.add("h3");
 h3.textContent = "I'm blue h3";
-container.appendChild(h3)
+container.appendChild(h3);
 h3.style.color = "blue";
+
+const div = document.createElement("div");
+div.classList.add("div");
+container.appendChild(div);
+div.setAttribute("style", "border-color: blue; background: pink;");
+// div.style.borderColor("blue")
+
+const h1 = document.createElement("h1");
+h1.classList.add("h1")
+div.appendChild(h1);
+h1.textContent = "I'm in div"
