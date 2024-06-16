@@ -1,3 +1,7 @@
+const paperButton = document.querySelector('.paper')
+const rockButton = document.querySelector('.rock')
+const scissors = document.querySelector('.scissors')
+
 function getComputerChoice() {
     let choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * choices.length)];
@@ -19,5 +23,15 @@ function playRound(playerSelection, computerSelection) {
         "beats" + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
         }
     }
+
+// function playGame(){
+//     for (let i = 0; i < 5; i++){
+//         let playerSelection = prompt("Enter your choice: ");
+//         let computerSelection = getComputerChoice();
+
+//         let result = playRound(playerSelection,computerSelection);
+//         console.log(result);
+//     }
+// }
 
 playGame()
