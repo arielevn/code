@@ -24,14 +24,21 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 
-function playGame(){
-    // for (let i = 0; i < 5; i++){
-        let playerSelection = prompt("Enter your choice: ");
-        let computerSelection = getComputerChoice();
-
-        let result = playRound(playerSelection,computerSelection);
-        console.log(result);
-    // }
+rockButton.addEventListener('click', () => {
+    const computerSelection = getComputerChoice();
+    const playerSelection = prompt("Enter your choie: ");
+    const result = playRound(playerSelection, computerSelection);
 }
+)
 
-playGame()
+
+// function playGame(){
+//     for (let i = 0; i < 5; i++){
+//         let playerSelection = prompt("Enter your choice: ");
+//         let computerSelection = getComputerChoice();
+
+//         let result = playRound(playerSelection,computerSelection);
+//         console.log(result);
+//     }
+// }
+
