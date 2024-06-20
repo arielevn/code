@@ -19,16 +19,16 @@ function playRound(playerSelection, computerSelection) {
         const p = document.createElement('p');
         p.innerText =  "You Win!" + " " + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + " " +
             "beats" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1); 
-        outcomeDiv.appenchild(p)
+        outcomeDiv.appendChild(p)
     }else if (playerSelection === computerSelection){
         const p = document.createElement('p');
         p.innerText = "It's a tie!";
-        outcomeDiv.appenchild(p)
+        outcomeDiv.appendChild(p)
     }else{
         const p = document.createElement('p');
         p.innerText = "You Lose!" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + 
         "beats" + " "  + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
-        outcomeDiv.appenchild(p)
+        outcomeDiv.appendChild(p)
         }
     }
 
