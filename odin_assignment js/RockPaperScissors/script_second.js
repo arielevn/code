@@ -14,12 +14,15 @@ function playRound(playerSelection, computerSelection) {
     if ((playerSelection === "rock" && computerSelection === "scissors") ||
         (playerSelection === "scissors" && computerSelection === "paper") ||
         (playerSelection === "paper" && computerSelection === "rock")){
-        return "You Win!" + " " + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + " " +
+        const p = document.createElement('p');
+        p.innerText =  "You Win!" + " " + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + " " +
             "beats" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1); 
     }else if (playerSelection === computerSelection){
-        return "It's a tie!";
+        const p = document.createElement('p');
+        p.innerText = "It's a tie!";
     }else{
-        return "You Lose!" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + 
+        const p = document.createElement('p');
+        p.innerText = "You Lose!" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + 
         "beats" + " "  + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
         }
     }
