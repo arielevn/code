@@ -1,6 +1,8 @@
 const paperButton = document.querySelector('.paper')
 const rockButton = document.querySelector('.rock')
 const scissors = document.querySelector('.scissors')
+const outcomeDiv = document.querySelector('.outcome') 
+
 
 function getComputerChoice() {
     let choices = ["rock", "paper", "scissors"];
