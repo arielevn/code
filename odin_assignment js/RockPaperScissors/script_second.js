@@ -29,11 +29,21 @@ function playRound(playerSelection, computerSelection) {
 
 rockButton.addEventListener('click', () => {
     const computerSelection = getComputerChoice();
-    const playerSelection = prompt("Enter your choie: ");
+    const playerSelection = "rock";
     const result = playRound(playerSelection, computerSelection);
-}
-)
+})
 
+paperButton.addEventListener('click', () => {
+    const computerSelection = getComputerChoice();
+    const playerSelection = "paper";
+    const result = playRound(playerSelection, computerSelection);
+})
+
+scissorsButton.addEventListener('click', () => {
+    const computerSelection = getComputerChoice();
+    const playerSelection = "scissors";
+    const result = playRound(playerSelection, computerSelection);
+})
 
 // function playGame(){
 //     for (let i = 0; i < 5; i++){
