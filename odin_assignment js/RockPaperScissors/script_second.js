@@ -26,7 +26,7 @@ function playRound(playerSelection, computerSelection) {
         outcomeDiv.appendChild(p)
     }else{
         const p = document.createElement('p');
-        p.innerText = "You Lose!" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + 
+        p.innerText = "You Lose!" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + " " +
         "beats" + " "  + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
         outcomeDiv.appendChild(p)
         }
