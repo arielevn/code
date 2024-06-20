@@ -1,3 +1,5 @@
+let computerScore = 0
+let playerScore = 0
 const paperButton = document.querySelector('.paper')
 const rockButton = document.querySelector('.rock')
 const scissorsButton = document.querySelector('.scissors')
@@ -19,16 +21,18 @@ function playRound(playerSelection, computerSelection) {
         const p = document.createElement('p');
         p.innerText =  "You Win!" + " " + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + " " +
             "beats" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1); 
-        outcomeDiv.appendChild(p)
+        outcomeDiv.appendChild(p);
+        playerScore++;
     }else if (playerSelection === computerSelection){
         const p = document.createElement('p');
         p.innerText = "It's a tie!";
-        outcomeDiv.appendChild(p)
+        outcomeDiv.appendChild(p);
     }else{
+        computerScore++;
         const p = document.createElement('p');
         p.innerText = "You Lose!" + " " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + " " +
         "beats" + " "  + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
-        outcomeDiv.appendChild(p)
+        outcomeDiv.appendChild(p);
         }
     }
 
