@@ -6,6 +6,7 @@ const scissorsButton = document.querySelector('.scissors')
 const outcomeDiv = document.querySelector('.outcome') 
 const playerScoreSpan = document.querySelector('.player-score')
 const computerScoreSpan = document.querySelector('.computer-score')
+const gameWinnerDiv = document.querySelector('.game-winner')
 
 
 function getComputerChoice() {
