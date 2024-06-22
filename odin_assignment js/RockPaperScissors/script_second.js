@@ -41,6 +41,13 @@ function playRound(playerSelection, computerSelection) {
 const updateScores = (playerScore, computerScore) => {
     playerScoreSpan.innerText = `${playerScore}`;
     computerScoreSpan.innerText = `${computerScore}`;
+    if (playerScore == 5){
+        const p = document.createElement('p');
+        p.innerText = 'You are winner of the game!';
+    }else{
+        playerScore == 5;
+        const p = document.createElement('p');
+        p.innerText = 'Computer is winner of the game!';
 }
 
 rockButton.addEventListener('click', () => {
