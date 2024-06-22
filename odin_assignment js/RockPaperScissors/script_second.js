@@ -45,10 +45,12 @@ const updateScores = (playerScore, computerScore) => {
     if (playerScore == 5){
         const p = document.createElement('p');
         p.innerText = 'You are winner of the game!';
+        gameWinnerDiv.append(p);
     }else{
         computerScoreScore == 5;
         const p = document.createElement('p');
         p.innerText = 'Computer is winner of the game!';
+        gameWinnerDiv.append(p);
 }}
 
 rockButton.addEventListener('click', () => {
