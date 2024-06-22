@@ -48,7 +48,7 @@ const updateScores = (playerScore, computerScore) => {
         playerScore == 5;
         const p = document.createElement('p');
         p.innerText = 'Computer is winner of the game!';
-}
+}}
 
 rockButton.addEventListener('click', () => {
     const computerSelection = getComputerChoice();
@@ -80,4 +80,3 @@ scissorsButton.addEventListener('click', () => {
 //         console.log(result);
 //     }
 // }
-
