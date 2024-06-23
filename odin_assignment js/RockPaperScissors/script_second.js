@@ -52,7 +52,7 @@ const updateScores = (playerScore, computerScore) => {
         const p = document.createElement('p');
         p.innerText = 'Computer is winner of the game!';
         gameWinnerDiv.append(p);
-        gameEnded = return;
+        gameEnded = true;
     }
 }
 
