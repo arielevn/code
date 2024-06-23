@@ -57,6 +57,7 @@ const updateScores = (playerScore, computerScore) => {
 }
 
 rockButton.addEventListener('click', () => {
+    if (gameEnded) return;
     const computerSelection = getComputerChoice();
     const playerSelection = "rock";
     const result = playRound(playerSelection, computerSelection);
@@ -64,6 +65,7 @@ rockButton.addEventListener('click', () => {
 })
 
 paperButton.addEventListener('click', () => {
+    if (gameEnded) return;
     const computerSelection = getComputerChoice();
     const playerSelection = "paper";
     const result = playRound(playerSelection, computerSelection);
@@ -71,6 +73,7 @@ paperButton.addEventListener('click', () => {
 })
 
 scissorsButton.addEventListener('click', () => {
+    if (gameEnded) return;
     const computerSelection = getComputerChoice();
     const playerSelection = "scissors";
     const result = playRound(playerSelection, computerSelection);
