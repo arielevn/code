@@ -1,5 +1,6 @@
 let computerScore = 0
 let playerScore = 0
+let gameEnded = false
 const paperButton = document.querySelector('.paper')
 const rockButton = document.querySelector('.rock')
 const scissorsButton = document.querySelector('.scissors')
@@ -46,12 +47,12 @@ const updateScores = (playerScore, computerScore) => {
         const p = document.createElement('p');
         p.innerText = 'You are winner of the game!';
         gameWinnerDiv.append(p);
-    }else if(computerScoreScore == 5){
+        gameEnded = true;
+    }else if(computerScore == 5){
         const p = document.createElement('p');
         p.innerText = 'Computer is winner of the game!';
         gameWinnerDiv.append(p);
-    }else{
-        updateScores(playerScore, computerScore);
+        gameEnded = return;
     }
 }
 
