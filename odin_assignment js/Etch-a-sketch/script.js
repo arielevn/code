@@ -17,6 +17,6 @@ function mouseover() {
     document.getElementById("container").style.color = "blue";
 }
 
-function mouseover() {
+function mouseout() {
     document.getElementById("container").style.color = "white";
 }
