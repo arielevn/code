@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 document.getElementById("container").onmouseover = function(){mouseover()};
 document.getElementById("container").onmouseout = function(){mouseout()};
+
+function mouseover() {
+    document.getElementById("container").style.color = "blue";
+}
+
+function mouseover() {
+    document.getElementById("container").style.color = "white";
+}
