@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 })
-object.onmouseover = function(){background-color: #000000} 
-object.onmouseout = function(){background-color: #FFFFFF} 
+document.getElementById("container").onmouseover = function(){mouseover()};
+document.getElementById("container").onmouseout = function(){mouseout()};
