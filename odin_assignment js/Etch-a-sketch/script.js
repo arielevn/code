@@ -6,17 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
         for (let j = 0; j < 16; j++) {
             const cell = document.createElement('div');
             cell.classList.add('cell');
+
+            function bgBlue() {
+                document.getElementById("cell").style.backgroundColor = "blue";
+            };
+            
+            function bgWhite() {
+                document.getElementById("cell").style.backgroundColor = "white";
+            };
+
             grid.appendChild(cell);
         }
     }
 })
-document.getElementById("container").onmouseover = function(){mouseover()};
-document.getElementById("container").onmouseout = function(){mouseout()};
+// document.getElementById("container").onmouseover = function(){mouseover()};
+// document.getElementById("container").onmouseout = function(){mouseout()};
 
-function bgBlue() {
-    document.getElementById("container").style.color = "blue";
-}
-
-function bgWhite() {
-    document.getElementById("container").style.color = "white";
-}
