@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
             const cell = document.createElement('div');
             cell.classList.add('cell');
 
-            function bgBlue() {
+            cell.onmouseover = function bgBlue() {
                 cell.style.backgroundColor = "blue";
             };
             
-            function bgWhite() {
-                cell.style.backgroundColor = "white";
-            };
+            // cell.onmouseout = function bgWhite() {
+            //     cell.style.backgroundColor = "white";
+            // };
 
             grid.appendChild(cell);
         }
