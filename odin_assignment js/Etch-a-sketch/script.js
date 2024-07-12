@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
             cell.classList.add('cell');
 
             function bgBlue() {
-                document.getElementById("cell").style.backgroundColor = "blue";
+                cell.style.backgroundColor = "blue";
             };
             
             function bgWhite() {
-                document.getElementById("cell").style.backgroundColor = "white";
+                cell.style.backgroundColor = "white";
             };
 
             grid.appendChild(cell);
