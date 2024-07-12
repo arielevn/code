@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("container").onmouseover = function(){mouseover()};
 document.getElementById("container").onmouseout = function(){mouseout()};
 
-function mouseover() {
+function bgBlue() {
     document.getElementById("container").style.color = "blue";
 }
 
-function mouseout() {
+function bgWhite() {
     document.getElementById("container").style.color = "white";
 }
