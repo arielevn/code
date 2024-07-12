@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .container {
     display:grid;
     grid-template-columns: repeat(16, 0fr);
@@ -9,4 +17,5 @@
     width: 10px;
     height: 10px;
     background-color: #f4f4f4;
+    border: 1px solid #ccc;
 }
