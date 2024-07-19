@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 cell.style.backgroundColor = "blue";
             };
             
-            // cell.onmouseout = function bgWhite() {
-            //     cell.style.backgroundColor = "white";
-            // };
+            cell.onmouseout = function bgWhite() {
+                cell.style.backgroundColor = "white";
+            };
 
             grid.appendChild(cell);
         }
