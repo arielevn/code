@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
             grid.appendChild(cell);
         }
     }
+
+    function newGrid() {
+
+    }
 })
 // document.getElementById("container").onmouseover = function(){mouseover()};
 // document.getElementById("container").onmouseout = function(){mouseout()};
