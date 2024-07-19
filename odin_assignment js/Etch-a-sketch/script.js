@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    const addBtn = document.querySelector('.button');
+
     const grid = document.querySelector('.container');
 
     for (let i = 0; i < 16; i++) {
