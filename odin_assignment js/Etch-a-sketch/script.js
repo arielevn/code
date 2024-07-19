@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function newGrid() {
-
+        let addedGrid;
+        let grid = prompt("how many more grid you want?", 1);
     }
 })
 // document.getElementById("container").onmouseover = function(){mouseover()};
