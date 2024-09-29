@@ -24,7 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function newGrid() {
         let addedGrid;
         let grid = prompt("how many more grid you want?", 1);
+        if (grid == null || grid == "") {
+
+        }
     }
+
+    addBtn.addEventListener('click', newGrid);
 })
 // document.getElementById("container").onmouseover = function(){mouseover()};
 // document.getElementById("container").onmouseout = function(){mouseout()};
