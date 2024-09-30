@@ -25,9 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
         let addedGrid;
         let grid = prompt("how many more grid you want?", 1);
         if (grid == null || grid == "") {
+            grid = parseInt(grid);
+            createGrid(grid, grid);
 
         }
     }
+
+    createGrid(16, 16);
 
     addBtn.addEventListener('click', newGrid);
 })
