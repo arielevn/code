@@ -22,11 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function newGrid() {
-        let addedGrid;
-        let grid = prompt("how many more grid you want?", 1);
-        if (grid == null || grid == "") {
-            grid = parseInt(grid);
-            createGrid(grid, grid);
+        let gridSize = prompt("how many more grid you want?", 1);
+        if (gridSize == null || gridSize == "") {
+            gridSize = parseInt(gridSize);
+            createGrid(gridSize, gridSize);
 
         }
     }
