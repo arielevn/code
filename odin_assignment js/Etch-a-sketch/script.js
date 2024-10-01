@@ -23,10 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function newGrid() {
         let gridSize = prompt("how many more grid you want?", 1);
-        if (gridSize == null || gridSize == "") {
+        if (gridSize !== null || gridSize !== "") {
             gridSize = parseInt(gridSize);
             createGrid(gridSize, gridSize);
-
         }
     }
 
