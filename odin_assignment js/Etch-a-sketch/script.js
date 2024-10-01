@@ -4,20 +4,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const grid = document.querySelector('.container');
 
-    for (let i = 0; i < 16; i++) {
-        for (let j = 0; j < 16; j++) {
-            const cell = document.createElement('div');
-            cell.classList.add('cell');
+    function createGrid(rows, cols) {
+        grid.innerHTML = '';
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
 
-            cell.onmouseover = function bgBlue() {
-                cell.style.backgroundColor = "blue";
-            };
-            
-            cell.onmouseout = function bgWhite() {
-                cell.style.backgroundColor = "white";
-            };
+                cell.onmouseover = function bgBlue() {
+                    cell.style.backgroundColor = "blue";
+                };
+                
+                cell.onmouseout = function bgWhite() {
+                    cell.style.backgroundColor = "white";
+                };
 
-            grid.appendChild(cell);
+                grid.appendChild(cell);
+            }
         }
     }
 
