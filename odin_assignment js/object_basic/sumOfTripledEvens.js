@@ -6,4 +6,6 @@ function sumOfTripledEvens (array){
         }
         sum += tripleEvenNumber;
     }
+
+    return sum;
 }
