@@ -1,4 +1,4 @@
-function minusOne(){
+function minusOne(num){
     return num - 1;
 }
 
