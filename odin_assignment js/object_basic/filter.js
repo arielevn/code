@@ -5,4 +5,4 @@ function oddNum(num){
 const arr = [1,2,3,4];
 const filteredArr = arr.filter(oddNum);
 
-console.filteredArr();
+console.log(filteredArr);
