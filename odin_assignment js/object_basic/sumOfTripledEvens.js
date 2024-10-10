@@ -5,15 +5,16 @@ function sumOfTripledEvens (array){
         // Multiply this number by three
         if (array[i] % 2 == 0){
             const tripleEvenNumber = array[i] * 3;
-        }
+        
         // Add the new number to the total
         sum += tripleEvenNumber;
+        }
     }
 
     return sum;
 }
 
 const arr = [1,2,3,4];
-const TripledEvens = arr.filter(sumOfTripledEvens);
+const TripledEvens = sumOfTripledEvens(arr);
 
 console.log(TripledEvens)
