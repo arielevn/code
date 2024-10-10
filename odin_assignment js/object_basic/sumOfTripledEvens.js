@@ -12,3 +12,8 @@ function sumOfTripledEvens (array){
 
     return sum;
 }
+
+const arr = [1,2,3,4];
+const TripledEvens = arr.filter(sumOfTripledEvens);
+
+console.log(TripledEvens)
