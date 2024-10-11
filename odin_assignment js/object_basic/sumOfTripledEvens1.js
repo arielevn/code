@@ -14,5 +14,13 @@ const TripledEvens = sumOfTripledEvens(arr);
 console.log(TripledEvens);
 
 //question
-// acc = accumulated, where is it from?
+// acc = accumulated, where is it from? 
 // curr = currentItem, where is it from?
+// answer for both questions: implicit relationship
+
+//The process:
+//Even numbers: [2, 4]
+// Tripled even numbers: [6, 12]
+// Accumulator: 0 Current Value: 6
+// Accumulator: 6 Current Value: 12
+// Final sum: 18
