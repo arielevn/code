@@ -5,4 +5,4 @@ let total = 1;
         total *= arr[i];
     }
 
-console.log(total)
+console.log(total);
