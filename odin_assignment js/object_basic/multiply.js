@@ -1,11 +1,8 @@
-function multiply(num){
-    let total = 1;
+const arr = [1,2,3,4,5];
+let total = 1;
+
     for ( let i = 0; i < total; i++){
-        num = i;
+        total *= arr[i];
     }
-        
-}
 
-
-
-console.log(i)
+console.log(total)
