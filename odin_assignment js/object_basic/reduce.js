@@ -1,5 +1,5 @@
 function reduce(num){
-    return num.reduce((acc + curr) => {
+    return num.reduce((acc, curr) => {
         return acc + curr;
     }, 0);
 }
