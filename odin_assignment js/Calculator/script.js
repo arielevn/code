@@ -6,3 +6,6 @@ keys.addEventListener('Click', e => {
         //do something
     }
 })
+
+const key = e.target
+const action = key.data.action
