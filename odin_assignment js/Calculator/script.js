@@ -14,3 +14,12 @@ const action = key.data.action
 if (!action){
     console.log('number key!')
 }
+
+if(
+    action == 'add';
+    action == 'substract';
+    action == 'divide';
+    action == 'multiply';
+){
+    console.log('operator key!')
+}
