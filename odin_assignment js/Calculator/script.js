@@ -16,10 +16,10 @@ if (!action){
 }
 
 if(
-    action === 'add';
-    action === 'substract';
-    action === 'divide';
-    action === 'multiply';
+    action === 'add' ||
+    action === 'substract' ||
+    action === 'divide' ||
+    action === 'multiply'
 ){
     console.log('operator key!')
 }
