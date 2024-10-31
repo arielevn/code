@@ -9,7 +9,7 @@ keys.addEventListener('Click', e => {
 
 //determine which type of key that is clicked
 const key = e.target
-const action = key.data.action
+const action = key.dataset.action
 
 if (!action){
     console.log('number key!')
