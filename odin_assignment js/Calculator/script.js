@@ -4,12 +4,11 @@ const keys = calculator.querySelector('.calculator-keys')
 keys.addEventListener('click', e => {
     if (e.target.matches('button')){
         //do something
+        //determine which type of key that is clicked
+        const key = e.target
+        const action = key.dataset.action
     }
 })
-
-//determine which type of key that is clicked
-const key = e.target
-const action = key.dataset.action
 
 if (!action){
     console.log('number key!')
