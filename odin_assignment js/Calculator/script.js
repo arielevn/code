@@ -2,8 +2,9 @@ const calculator = document.querySelector('.calculator')
 const keys = calculator.querySelector('.calculator-keys')
 
 keys.addEventListener('click', e => {
+    //checks if the clicked element (e.target) is a button element within keys. 
+    //This helps ensure only button clicks are processed (ignoring clicks outside buttons).
     if (e.target.matches('button')){
-        //do something
         //determine which type of key that is clicked
         const key = e.target
         const action = key.dataset.action
@@ -34,4 +35,3 @@ keys.addEventListener('click', e => {
         }
     }
 })
-
