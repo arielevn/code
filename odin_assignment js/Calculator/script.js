@@ -12,8 +12,11 @@ keys.addEventListener('click', e => {
         const keyContent = key.textContent
         const displayedNum = diplay.textContent
 
+        //Replacing the display's content by clicked key
         if (!action){
-            console.log('number key!')
+            if(displayedNum === '0'){
+                displayedNum = keyContent
+            }
         }
         
         if(
