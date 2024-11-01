@@ -9,6 +9,8 @@ keys.addEventListener('click', e => {
         //determine which type of key that is clicked
         const key = e.target
         const action = key.dataset.action
+        const keyContent = key.textContent
+        const displayedNum = diplay.textContent
 
         if (!action){
             console.log('number key!')
