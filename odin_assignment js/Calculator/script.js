@@ -1,5 +1,6 @@
 const calculator = document.querySelector('.calculator')
 const keys = calculator.querySelector('.calculator-keys')
+const display = document.querySelector('.calculator-display')
 
 keys.addEventListener('click', e => {
     if (e.target.matches('button')){
@@ -10,7 +11,7 @@ keys.addEventListener('click', e => {
         const key = e.target
         const action = key.dataset.action
         const keyContent = key.textContent
-        const displayedNum = diplay.textContent
+        const displayedNum = display.textContent
 
         //Replacing the display's content by clicked key
         if (!action){
