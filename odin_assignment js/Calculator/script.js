@@ -16,7 +16,7 @@ keys.addEventListener('click', e => {
         //Replacing the display's content by clicked key
         if (!action){
             if(displayedNum === '0'){
-                displayedNum = keyContent
+                display.textContent = keyContent
             }
         }
         
