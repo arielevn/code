@@ -2,5 +2,5 @@ version 1
 [x] it should have a place to store todos
 [x] it should have a way to display todos
 [x] it should have a way to add todos
-[] it should have a way to edit todos
+[x] it should have a way to edit todos
 [] it should have a way to remove todos
