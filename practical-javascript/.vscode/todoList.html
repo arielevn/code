@@ -18,8 +18,14 @@
         todos.splice(0, 1);
 
         function add(x){
-            todos.push(x)
-            
+            todos.push(x);
+
+            console.log(todos);
+        }
+
+        function edit(x, y){
+            todos[x] = 'y';
+
             console.log(todos)
         }
     </script>
