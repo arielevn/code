@@ -4,3 +4,6 @@ version 1
 [x] it should have a way to add todos
 [x] it should have a way to edit todos
 [x] it should have a way to remove todos
+
+version 2
+[] It should have a function to add a todo
