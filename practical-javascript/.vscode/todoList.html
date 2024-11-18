@@ -15,15 +15,8 @@
 
         console.log(todos);
 
-        todos.push('item 4');
-
-        todos[0] = 'item 1 updated';
-
-        todos.splice(0, 1);
-
-        function add(x){
-            todos.push(x);
-
+        function add(nextTodo){
+            todos.push({todoText: NextTodo, completed: false});
             console.log(todos);
         }
 
