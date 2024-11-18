@@ -6,6 +6,11 @@ version 1
 [x] it should have a way to remove todos
 
 version 2
-[] It should have a function to add a todo
-[] It should have a function to edit a todo
-[] It should have a function to remove a todo
+[x] It should have a function to add a todo
+[x] It should have a function to edit a todo
+[x] It should have a function to remove a todo
+
+version 3
+[] initialize todo variable with objects
+[] The add function should add objects in todos variable
+[] The edit function should edit objects in todos variable
