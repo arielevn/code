@@ -20,9 +20,8 @@
             console.log(todos);
         }
 
-        function edit(x, y){
-            todos[x] = y;
-
+        function edit(position, newItem){
+            todos[position] = {todoText: newItem, completed: false};
             console.log(todos);
         }
 
