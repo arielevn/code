@@ -14,4 +14,6 @@ version 3
 [x] initialize todo variable with objects
 [x] The add function should add objects in todos variable
 [x] The edit function should edit objects in todos variable
+
+version 4
 [] Add a function that toggle todos objects
