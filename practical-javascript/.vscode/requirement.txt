@@ -12,6 +12,6 @@ version 2
 
 version 3
 [x] initialize todo variable with objects
-[] The add function should add objects in todos variable
-[] The edit function should edit objects in todos variable
+[x] The add function should add objects in todos variable
+[x] The edit function should edit objects in todos variable
 [] Add a function that toggle todos objects
