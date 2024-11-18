@@ -11,7 +11,7 @@ version 2
 [x] It should have a function to remove a todo
 
 version 3
-[] initialize todo variable with objects
+[x] initialize todo variable with objects
 [] The add function should add objects in todos variable
 [] The edit function should edit objects in todos variable
 [] Add a function that toggle todos objects
