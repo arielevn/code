@@ -37,12 +37,13 @@
         ToggleEvent[1]
         {todos[position], completed: true}
         
-        //function toggle(position, completed)
-        // if todo at position has .completed is equal to true
-        // Make .completed true
+        function toggle(position, completed)
+        if(position.completed === true){
+            console.log(todoText[position] + 'is done')
+        } else{
+            console.log(todoText[position] + 'is not done')
+        }
 
-        // if todo at position has .completed is equal to false
-        // Make .completed false
     </script>
 </body>
 </html>
