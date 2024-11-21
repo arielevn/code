@@ -38,12 +38,12 @@
         // {todos[position], completed: true}
         
         function toggle(position){
-        if(position.completed === true){
-            console.log(todos[position].todoText + ' ' + 'is done');
-        } else{
-            console.log(todos[position].todoText + ' ' + 'is not done');
-        }}
-
+            if(todos[position].completed === false){
+                todos[position].completed = true; 
+            } else{
+                todos[position].completed = false;
+            }
+        }
     </script>
 </body>
 </html>
