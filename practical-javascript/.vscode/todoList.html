@@ -13,17 +13,17 @@
             {todoText: 'Item 3', completed: false},
         ];
 
-        console.log(todos);
+        diplayTodos();
 
         function add(nextTodo){
             todos.push({todoText: nextTodo, completed: false});
-            console.log(todos);
+            diplayTodos();
         }
 
         function edit(position, newItem){
             todos[position] = {todoText: newItem, completed: false};
             // alternative: todo[position].todoText = newItem;
-            console.log(todos);
+            diplayTodos();
         }
 
         function remove(x){
@@ -48,6 +48,10 @@
             } else{
                 todos[position].completed = false;
             }
+        }
+
+        function diplayTodos(){
+            console.log(todos);
         }
     </script>
 </body>
