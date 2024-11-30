@@ -19,6 +19,5 @@ version 4
 [x] Add a function that toggle todos objects
 
 version 5
-[] It should have function that displaying todos
-[] displayTodos should show the todoText property
-[] displayTodos should show the completed property
+[x] It should have function that displaying todos
+[x] displayTodos should show the todoText property
