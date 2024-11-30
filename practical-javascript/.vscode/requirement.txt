@@ -21,3 +21,9 @@ version 4
 version 5
 [x] It should have function that displaying todos
 [x] displayTodos should show the todoText property
+
+version 6
+[] It should have functionfor toggling all todos
+[] If everything is false ===> change everything to true
+[] If everything is true ===> change everything to false
+[] If mixed change everything to true
