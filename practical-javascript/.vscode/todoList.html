@@ -53,7 +53,19 @@
         function diplayTodos(){
             for(i = 0; i < todos.length; i++){
                 console.log(todos[i].todoText);
-            }   
+            }}   
+
+        function toggleAll(){
+            for(i = 0; i < todos.length; i++)
+            if(todos[i].completed === true){
+                for(i = 0; i < todos.length; i++)
+                todos[i].completed = false;
+                console.log(todos[i]);
+            }else{
+                for(i = 0; i < todos.length; i++)
+                todos[i].completed = true;
+                console.log(todos[i]);
+            }}
     </script>
 </body>
 </html>
