@@ -55,17 +55,36 @@
                 console.log(todos[i].todoText);
             }}   
 
+        var completedTodos = 0
+
         function toggleAll(){
             for(i = 0; i < todos.length; i++){
-            if(todos[i].completed === true){
+                if(todos[i].completed === false){
+                    completedTodos++;
+                }
+            }
+                
+            if(completedTodos === todos.length){
                 for(i = 0; i < todos.length; i++){
                 todos[i].completed = false;
-                console.log(todos[i]);}
-            }else{
-                for(i = 0; i < todos.length; i++){
-                todos[i].completed = true;
-                console.log(todos[i]);}
-            }}}
+                }
+            }
+            // If everything is false ===> change everything to true
+            // If everything is true ===> change everything to false
+            // If mixed change everything to true
+        }
+            
+        // function toggleAll(){
+        //     for(i = 0; i < todos.length; i++){
+        //     if(todos[i].completed === true){
+        //         for(i = 0; i < todos.length; i++){
+        //         todos[i].completed = false;
+        //         console.log(todos[i]);}
+        //     }else{
+        //         for(i = 0; i < todos.length; i++){
+        //         todos[i].completed = true;
+        //         console.log(todos[i]);}
+        //     }}}
     </script>
 </body>
 </html>
