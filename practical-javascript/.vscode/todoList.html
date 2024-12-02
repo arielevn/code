@@ -31,18 +31,7 @@
             // todos.splice(x, 1)  // alternative assignment
         }
 
-        // ToggleEvent[0]
-        // {todos[position], completed: false}
-        
-        // ToggleEvent[1]
-        // {todos[position], completed: true}
-        
         function toggle(position){
-        // if todo at position has .completed equal to false
-        // make .completed true
-        // if todo at position has .completed equal to true
-        // make .completed false
-        
             if(todos[position].completed === false){
                 todos[position].completed = true; 
             } else{
@@ -66,7 +55,11 @@
                 
             if(completedTodos === todos.length){
                 for(i = 0; i < todos.length; i++){
-                todos[i].completed = false;
+                    todos[i].completed = false;
+                }
+            }  else {
+                for(i = 0; i < todos.length; i++){
+                todos[i].completed = true;
                 }
             }
             // If everything is false ===> change everything to true
@@ -85,6 +78,18 @@
         //         todos[i].completed = true;
         //         console.log(todos[i]);}
         //     }}}
+
+        //alternative from chatgpt
+        // function toggleAll() {
+        // // Determine if all todos are completed
+        // const allCompleted = todos.every(todo => todo.completed);
+
+        // // Toggle todos in a single loop
+        // for (let i = 0; i < todos.length; i++) {
+        //     todos[i].completed = !allCompleted; // Set to false if all completed, otherwise true
+        //     console.log(todos[i]); // Log the updated todo
+        //     }
+        // }
     </script>
 </body>
 </html>
