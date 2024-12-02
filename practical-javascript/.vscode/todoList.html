@@ -13,8 +13,6 @@
             {todoText: 'Item 3', completed: false},
         ];
 
-        diplayTodos();
-
         function add(nextTodo){
             todos.push({todoText: nextTodo, completed: false});
             diplayTodos();
@@ -62,10 +60,9 @@
                 todos[i].completed = true;
                 }
             }
-            // If everything is false ===> change everything to true
-            // If everything is true ===> change everything to false
-            // If mixed change everything to true
         }
+
+        displayTodos();
             
         // function toggleAll(){
         //     for(i = 0; i < todos.length; i++){
