@@ -15,13 +15,13 @@
 
         function add(nextTodo){
             todos.push({todoText: nextTodo, completed: false});
-            diplayTodos();
+            displayTodos();
         }
 
         function edit(position, newItem){
             todos[position] = {todoText: newItem, completed: false};
             // alternative: todo[position].todoText = newItem;
-            diplayTodos();
+            displayTodos();
         }
 
         function remove(x){
@@ -37,7 +37,7 @@
             }
         }
 
-        function diplayTodos(){
+        function displayTodos(){
             for(i = 0; i < todos.length; i++){
                 console.log(todos[i].todoText);
             }}   
