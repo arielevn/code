@@ -17,6 +17,8 @@ keys.addEventListener('click', e => {
         if (!action){
             if(displayedNum === '0'){
                 display.textContent = keyContent
+            } else {
+                display.textContent = displayedNum + keyContent
             }
         }
         
