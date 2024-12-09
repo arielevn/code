@@ -27,6 +27,7 @@
         function remove(x){
             todos.pop(todos[x]);
             // todos.splice(x, 1)  // alternative assignment
+            displayTodos();
         }
 
         function toggle(position){
@@ -35,6 +36,7 @@
             } else{
                 todos[position].completed = false;
             }
+            displayTodos();
         }
 
         function displayTodos(){
@@ -46,7 +48,7 @@
 
         function toggleAll(){
             var completedTodos = 0
-            
+
             for(i = 0; i < todos.length; i++){
                 if(todos[i].completed === true){
                     completedTodos++;
