@@ -29,6 +29,8 @@ keys.addEventListener('click', e => {
             action === 'multiply'
         ){
             key.classlist.add('is-depressed')
+            //add custome attribute
+            calculator.dataset.previousKeyType = 'operator'
         }
         
         if(action === 'decimal'){
