@@ -13,6 +13,10 @@ keys.addEventListener('click', e => {
         const keyContent = key.textContent
         const displayedNum = display.textContent
 
+        //remove .is-depressed class from all keys
+        Array.from(key.parentNode.children)
+            .foreach(k => k.classList.remove('is-depressed'))
+        
         //Replacing the display's content by clicked key
         if (!action){
             if(displayedNum === '0'){
@@ -33,6 +37,8 @@ keys.addEventListener('click', e => {
             calculator.dataset.previousKeyType = 'operator'
         }
         
+        const previousKeyType = calculator.dataset.previousKeyType
+
         if(action === 'decimal'){
             display.textContent = displayedNum + '.'
         }
