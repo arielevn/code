@@ -73,7 +73,8 @@
 
         displayTodos();
 
-        var displayTodosButton = document.getElementById('display-todos-button')
+        var displayTodosButton = document.getElementById('display-todos-button');
+        displayTodosButton.addEventListener('click', displayTodos);
             
         // function toggleAll(){
         //     for(i = 0; i < todos.length; i++){
