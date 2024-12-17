@@ -19,11 +19,14 @@
         Add
     </button>
 
+    <input id="add-input">
+
     <button id="edit-button">
         Edit
     </button>
 
     <script>
+
         var todos = [
             {todoText: 'Item 1', completed: false},
             {todoText: 'Item 2', completed: false},
@@ -92,6 +95,7 @@
         toggleAllButton.addEventListener('click', toggleAll);
 
         var addButton = document.getElementById('add-button');
+        var addInput = document.getElementById('add-input');
         addButton.addEventListener('click', add);
         
         var editButton = document.getElementById('edit-button');
