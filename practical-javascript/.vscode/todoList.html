@@ -11,6 +11,10 @@
         Display Todos
     </button>
 
+    <button id="toggle-all-button">
+        Toggle All
+    </button>
+
     <script>
         var todos = [
             {todoText: 'Item 1', completed: false},
@@ -76,6 +80,9 @@
         var displayTodosButton = document.getElementById('display-todos-button');
         displayTodosButton.addEventListener('click', displayTodos);
             
+        var toggleAllButton = document.getElementById('toggle-all-button');
+        toggleAllButton.addEventListener('click', toggleAll);
+        
         // function toggleAll(){
         //     for(i = 0; i < todos.length; i++){
         //     if(todos[i].completed === true){
