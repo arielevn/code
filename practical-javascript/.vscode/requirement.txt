@@ -29,7 +29,13 @@ version 6
 [x] If mixed change everything to true
 
 version 7
-[] It should have a button for displayTodos
-[] displayTodos button should run the displayTodos function
-[] It should have a button for toggleAll
-[] toggleAll button should run the toggleAll function
+[x] It should have a button for displayTodos
+[x] displayTodos button should run the displayTodos function
+[x] It should have a button for toggleAll
+[x] toggleAll button should run the toggleAll function
+
+version 8
+[] There should a working button for adding a todo.
+[] There should a working button for editing a todo.
+[] There should a working button for removing a todo.
+[] There should a working button for toggling a todo.
