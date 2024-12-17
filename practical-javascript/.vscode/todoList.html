@@ -26,8 +26,8 @@
             {todoText: 'Item 3', completed: false},
         ];
 
-        function add(nextTodo){
-            todos.push({todoText: nextTodo, completed: false});
+        function add(){
+            todos.push({todoText: 'Item' + ' ' + (todos.length + 1)  , completed: false});
             displayTodos();
         }
 
@@ -88,7 +88,7 @@
         toggleAllButton.addEventListener('click', toggleAll);
 
         var addButton = document.getElementById('add-button');
-        addButton.addeventlistener('click', add);
+        addButton.addEventListener('click', add);
         
         // function toggleAll(){
         //     for(i = 0; i < todos.length; i++){
