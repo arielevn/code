@@ -34,7 +34,9 @@
         ];
 
         function add(){
-            todos.push({todoText: 'Item' + ' ' + (todos.length + 1)  , completed: false});
+            var initialTodoText = addInput.value;
+            todos.push({todoText: initialTodoText, completed: false});
+            addInput.value = ''
             displayTodos();
         }
 
