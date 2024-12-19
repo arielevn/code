@@ -7,23 +7,13 @@
 </head>
 <body>
 
-    <button id="display-todos-button" class="display-button">
-        Display Todos
-    </button>
-
-    <button id="toggle-all-button">
-        Toggle All
-    </button>
-
-    <button id="add-button">
-        Add
-    </button>
-
+    <button id="display-todos-button" class="display-button">Display Todos</button>
+    <button id="toggle-all-button">Toggle All</button>
+    <button id="add-button">Add</button>
     <input id="add-input">
-
-    <button id="edit-button">
-        Edit
-    </button>
+    <button id="edit-button">Edit</button>
+    <input id="edit-position">
+    <input id="edit-input">
 
     <script>
 
@@ -40,9 +30,11 @@
             displayTodos();
         }
 
-        function edit(position, newItem){
-            todos[position] = {todoText: newItem, completed: false};
-            // alternative: todo[position].todoText = newItem;
+        function edit(editPosition, editInput){
+            todos[editPosition] = {todoText: editInput, completed: false};
+            // alternative: todo[editPosition].todoText = editInput;
+            editPosition.value = '';
+            editInput.value = '';
             displayTodos();
         }
 
@@ -101,6 +93,8 @@
         addButton.addEventListener('click', add);
         
         var editButton = document.getElementById('edit-button');
+        var editInput = document.getElementById('edit-input');
+        var editPosition = document.getElementById('edit-position');
         editButton.addEventListener('click', edit)
 
         // function toggleAll(){
