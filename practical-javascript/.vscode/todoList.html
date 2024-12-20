@@ -16,6 +16,8 @@
     <input id="edit-text-input">
     <button id="remove-button">Remove</button>
     <input type="text" id="remove-position-input">
+    <button id="toggle-button">Toggle</button>
+    <input type="text" id="toggle-input">
 
     <script>
 
@@ -47,12 +49,13 @@
             displayTodos();
         }
 
-        function toggle(position){
-            if(todos[position].completed === false){
-                todos[position].completed = true; 
+        function toggle(){
+            if(todos[toggleInput.value].completed === false){
+                todos[toggleInput.value].completed = true; 
             } else{
-                todos[position].completed = false;
+                todos[toggleInput.value].completed = false;
             }
+            toggleInput.value = '';
             displayTodos();
         }
 
@@ -101,6 +104,10 @@
         var removeButton = document.getElementById('remove-button');
         var removePositionInput = document.getElementById('remove-position-input');
         removeButton.addEventListener('click', remove);
+
+        var toggleButton = document.getElementById('toggle-button');
+        var toggleInput = document.getElementById('toggle-input');
+        toggleButton.addEventListener('click', toggle)
 
         // function toggleAll(){
         //     for(i = 0; i < todos.length; i++){
