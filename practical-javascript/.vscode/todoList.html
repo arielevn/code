@@ -30,11 +30,11 @@
             displayTodos();
         }
 
-        function edit(editPosition, editInput){
-            todos[editPosition] = {todoText: editInput, completed: false};
-            // alternative: todo[editPosition].todoText = editInput;
-            editPosition.value = '';
-            editInput.value = '';
+        function edit(){
+            todos[editPositionInput.value] = {todoText: editTextInput.value, completed: false};
+            // alternative: todo[editPositionInput].todoText = editTextInput;
+            editPositionInput.value = '';
+            editTextInput.value = '';
             displayTodos();
         }
 
@@ -57,8 +57,6 @@
             for(i = 0; i < todos.length; i++){
                 console.log(todos[i].todoText);
             }}   
-
-        
 
         function toggleAll(){
             var completedTodos = 0
@@ -93,8 +91,8 @@
         addButton.addEventListener('click', add);
         
         var editButton = document.getElementById('edit-button');
-        var editInput = document.getElementById('edit-input');
-        var editPosition = document.getElementById('edit-position');
+        var editTextInput = document.getElementById('edit-text-input');
+        var editPositionInput = document.getElementById('edit-position-input');
         editButton.addEventListener('click', edit)
 
         // function toggleAll(){
