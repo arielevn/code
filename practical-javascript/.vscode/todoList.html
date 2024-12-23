@@ -19,6 +19,9 @@
     <button id="toggle-button">Toggle</button>
     <input type="text" id="toggle-input">
 
+    <ul id="todos-ul">
+    </ul>
+
     <script>
 
         var todos = [
@@ -60,9 +63,15 @@
         }
 
         function displayTodos(){
-            for(i = 0; i < todos.length; i++){
-                console.log(todos[i].todoText);
-            }}   
+            // for(i = 0; i < todos.length; i++){
+                // console.log(todos[i].todoText)}
+
+            var todosUl = document.getElementById('todos-ul');
+                for(i = 0; i < todos.length; i++){
+                    var todoLi = document.createElement('li');
+                    todosUl.appendChild(todoLi);
+                }
+        }   
 
         function toggleAll(){
             var completedTodos = 0
