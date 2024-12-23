@@ -66,7 +66,9 @@
             // for(i = 0; i < todos.length; i++){
                 // console.log(todos[i].todoText)}
 
-            var todosUl = document.getElementById('todos-ul');
+                var todosUl = document.getElementById('todos-ul');
+                todosUl.innerHTML = '';
+                
                 for(i = 0; i < todos.length; i++){
                     var todoLi = document.createElement('li');
                     todosUl.appendChild(todoLi);
