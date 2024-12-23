@@ -35,7 +35,10 @@ version 7
 [x] toggleAll button should run the toggleAll function
 
 version 8
-[] There should a working button for adding a todo.
-[] There should a working button for editing a todo.
-[] There should a working button for removing a todo.
-[] There should a working button for toggling a todo.
+[x] There should a working button for adding a todo.
+[x] There should a working button for editing a todo.
+[x] There should a working button for removing a todo.
+[x] There should a working button for toggling a todo.
+
+version 9
+[x] every todo has to have a li
