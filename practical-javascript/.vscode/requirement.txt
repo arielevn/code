@@ -42,3 +42,5 @@ version 8
 
 version 9
 [x] every todo has to have a li
+[x] each li should show the todoText property
+[ ] Each li should show the completed property
