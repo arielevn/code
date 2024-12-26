@@ -53,10 +53,10 @@
         }
 
         function toggle(){
-            if(todos[toggleInput.value].completed === false){
-                todos[toggleInput.value].completed = true; 
+            if(todos[toggleInput.value -1].completed === false){
+                todos[toggleInput.value -1].completed = true; 
             } else{
-                todos[toggleInput.value].completed = false;
+                todos[toggleInput.value -1].completed = false;
             }
             toggleInput.value = '';
             displayTodos();
@@ -71,7 +71,13 @@
 
                 for(i = 0; i < todos.length; i++){
                     var todoLi = document.createElement('li');
-                    todoLi.innerText = todos[i].todoText;
+
+                    if(todos[i].completed === true){
+                        todoLi.innerText = '[X] ' + todos[i].todoText;
+                    } else {
+                        todoLi.innerText = '[ ] ' + todos[i].todoText;
+                    }
+                    // todoLi.innerText = todos[i].todoText;
                     todosUl.appendChild(todoLi);
                 }
         }   
