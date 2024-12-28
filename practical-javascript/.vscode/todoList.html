@@ -14,8 +14,8 @@
     <button id="edit-button">Edit</button>
     <input id="edit-position-input">
     <input id="edit-text-input">
-    <button id="remove-button">Remove</button>
-    <input type="text" id="remove-position-input">
+    <!-- <button id="remove-button">Remove</button>
+    <input type="text" id="remove-position-input"> -->
     <button id="toggle-button">Toggle</button>
     <input type="text" id="toggle-input">
 
@@ -45,10 +45,16 @@
             displayTodos();
         }
 
-        function remove(){
-            // todos.pop(todos[removePositionInput]);
-            todos.splice(removePositionInput, 1);  // alternative assignment
-            removePositionInput.value = '';
+        // function remove(){
+        //     // todos.pop(todos[removePositionInput]);
+        //     todos.splice(removePositionInput, 1);  // alternative assignment
+        //     removePositionInput.value = '';
+        //     displayTodos();
+        // }
+
+        function remove(event){
+            var position = event.target.id;
+            todos.splice(position, 1);
             displayTodos();
         }
 
@@ -80,8 +86,11 @@
                     // todoLi.innerText = todos[i].todoText;
 
                     var removeButton = document.createElement('button');
-                    removeButton.innerText = 'Remove'
-                    todoLi.appendChild(removeButton)
+                    removeButton.innerText = 'Remove';
+                    removeButton.id = i;
+
+                    todoLi.appendChild(removeButton);
+                    removeButton.addEventListener('click', remove);
 
                     todosUl.appendChild(todoLi);
                 }
@@ -126,7 +135,7 @@
         editButton.addEventListener('click', edit)
 
         var removeButton = document.getElementById('remove-button');
-        var removePositionInput = document.getElementById('remove-position-input');
+        // var removePositionInput = document.getElementById('remove-position-input');
         removeButton.addEventListener('click', remove);
 
         var toggleButton = document.getElementById('toggle-button');
