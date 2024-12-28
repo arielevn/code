@@ -78,6 +78,11 @@
                         todoLi.innerText = '[ ] ' + todos[i].todoText;
                     }
                     // todoLi.innerText = todos[i].todoText;
+
+                    var removeButton = document.createElement('button');
+                    removeButton.innerText = 'Remove'
+                    todoLi.appendChild(removeButton)
+
                     todosUl.appendChild(todoLi);
                 }
         }   
