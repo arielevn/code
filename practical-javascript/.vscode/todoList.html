@@ -53,6 +53,16 @@
         // }
 
         function remove(event){
+            //                      is the remove button we clicked on
+            // event.toElement 
+                // not in the Event documentation page
+            // event.target
+                // may need to research further
+            // event.currentTarget
+                // may need to research further
+            // event.srcElement
+                // do not use > it is an old version
+            // search on: Event HTML element
             var position = event.target.id;
             todos.splice(position, 1);
             displayTodos();
