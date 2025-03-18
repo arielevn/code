@@ -7,7 +7,6 @@
 </head>
 <body>
 
-    <button id="display-todos-button" class="display-button">Display Todos</button>
     <button id="toggle-all-button">Toggle All</button>
     <button id="add-button">Add</button>
     <input id="add-input">
@@ -131,10 +130,7 @@
         }
 
         displayTodos();
-
-        var displayTodosButton = document.getElementById('display-todos-button');
-        displayTodosButton.addEventListener('click', displayTodos);
-            
+     
         var toggleAllButton = document.getElementById('toggle-all-button');
         toggleAllButton.addEventListener('click', toggleAll);
 
