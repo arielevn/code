@@ -46,5 +46,9 @@ version 9
 [x] Each li should show the completed property
 
 version 10
-[ ] Every todo should have its own remove button
-[ ] Revery remove button should working
+[X] Every todo should have its own remove button
+[X] Every remove button should working
+
+verion 11
+[ ] Every todo should have its own toggle button
+[ ] Every toggle button should working
