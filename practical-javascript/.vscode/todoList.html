@@ -79,6 +79,16 @@
             toggleInput.value = '';
             displayTodos();
         }
+        
+        function toggleBtn(event){
+            var position =  event.target.id;
+            if(todos[position].completed === false){
+                todos[position].completed = true; 
+            } else{
+                todos[position].completed = false;
+            }
+            displayTodos();
+        }
 
         function displayTodos(){
             // for(i = 0; i < todos.length; i++){
@@ -97,12 +107,12 @@
                     }
                     // todoLi.innerText = todos[i].todoText;
 
-                    var toggleButton = document.createElement('button');
-                    toggleButton.innerText = 'toggle';
-                    toggleButton.id = 'toggle' + i;
+                    var toggleButtonSingle = document.createElement('button');
+                    toggleButtonSingle.innerText = 'toggleSingle';
+                    toggleButtonSingle.id = i;
 
-                    todoLi.appendChild(toggleButton);
-                    toggleButton.addEventListener('click', toggle);
+                    todoLi.appendChild(toggleButtonSingle);
+                    toggleButtonSingle.addEventListener('click', toggleBtn);
 
                     var removeButton = document.createElement('button');
                     removeButton.innerText = 'Remove';
