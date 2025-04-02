@@ -15,8 +15,8 @@
     <input id="edit-text-input" placeholder="edit text">
     <!-- <button id="remove-button">Remove</button>
     <input type="text" id="remove-position-input"> -->
-    <button id="toggle-button">Toggle</button>
-    <input type="text" id="toggle-input" placeholder="toggle position">
+    <!-- <button id="toggle-button">Toggle</button>
+    <input type="text" id="toggle-input" placeholder="toggle position"> -->
 
     <ul id="todos-ul">
     </ul>
@@ -70,15 +70,15 @@
             displayTodos();
         }
 
-        function toggle(){
-            if(todos[toggleInput.value -1].completed === false){
-                todos[toggleInput.value -1].completed = true; 
-            } else{
-                todos[toggleInput.value -1].completed = false;
-            }
-            toggleInput.value = '';
-            displayTodos();
-        }
+        // function toggle(){
+        //     if(todos[toggleInput.value -1].completed === false){
+        //         todos[toggleInput.value -1].completed = true; 
+        //     } else{
+        //         todos[toggleInput.value -1].completed = false;
+        //     }
+        //     toggleInput.value = '';
+        //     displayTodos();
+        // }
         
         function toggleBtn(event){
             var position =  event.target.id;
@@ -108,7 +108,7 @@
                     // todoLi.innerText = todos[i].todoText;
 
                     var toggleButtonSingle = document.createElement('button');
-                    toggleButtonSingle.innerText = 'toggleSingle';
+                    toggleButtonSingle.innerText = 'Toggle';
                     toggleButtonSingle.id = i;
 
                     todoLi.appendChild(toggleButtonSingle);
@@ -164,9 +164,9 @@
         // var removePositionInput = document.getElementById('remove-position-input');
         //removeButton.addEventListener('click', remove);
 
-        var toggleButton = document.getElementById('toggle-button');
-        var toggleInput = document.getElementById('toggle-input');
-        toggleButton.addEventListener('click', toggle)
+        // var toggleButton = document.getElementById('toggle-button');
+        // var toggleInput = document.getElementById('toggle-input');
+        // toggleButton.addEventListener('click', toggle)
 
         // function toggleAll(){
         //     for(i = 0; i < todos.length; i++){
