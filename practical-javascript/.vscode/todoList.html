@@ -97,6 +97,13 @@
                     }
                     // todoLi.innerText = todos[i].todoText;
 
+                    var toggleButton = document.createElement('button');
+                    toggleButton.innerText = 'toggle';
+                    toggleButton.id = 'toggle' + i;
+
+                    todoLi.appendChild(toggleButton);
+                    toggleButton.addEventListener('click', toggle);
+
                     var removeButton = document.createElement('button');
                     removeButton.innerText = 'Remove';
                     removeButton.id = i;
