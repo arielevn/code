@@ -82,10 +82,10 @@
         
         function toggleBtn(event){
             var position =  event.target.id;
-            if(todos[position].completed === false){
-                todos[position].completed = true; 
+            if(todos[position.slice(-1)].completed === false){
+                todos[position.slice(-1)].completed = true; 
             } else{
-                todos[position].completed = false;
+                todos[position.slice(-1)].completed = false;
             }
             displayTodos();
         }
@@ -109,14 +109,14 @@
 
                     var toggleButtonSingle = document.createElement('button');
                     toggleButtonSingle.innerText = 'Toggle';
-                    toggleButtonSingle.id = i;
+                    toggleButtonSingle.id = 'toggle-' + i;
 
                     todoLi.appendChild(toggleButtonSingle);
                     toggleButtonSingle.addEventListener('click', toggleBtn);
 
                     var removeButton = document.createElement('button');
                     removeButton.innerText = 'Remove';
-                    removeButton.id = i;
+                    removeButton.id = 'remove-' + i;
 
                     todoLi.appendChild(removeButton);
                     removeButton.addEventListener('click', remove);
