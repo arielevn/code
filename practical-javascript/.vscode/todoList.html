@@ -91,15 +91,16 @@
                 // 'toggle-101'.split('-')[1];
                 // 'remove-101'.split('-')[1];
                 // 'edot-101'.split('-')[1];
+                    // best option
             // .substr: same as slice but return an array; needs modification for edit
                 // 'toggle-101'.substr(7);
                 // 'edit-101'.substr(5);
 
             var position =  event.target.id;
-            if(todos[position.slice(7)].completed === false){
-                todos[position.slice(7)].completed = true; 
+            if(todos[position.split('-')[1]].completed === false){
+                todos[position.split('-')[1]].completed = true; 
             } else{
-                todos[position.slice(7)].completed = false;
+                todos[position.split('-')[1]].completed = false;
             }
             displayTodos();
         }
