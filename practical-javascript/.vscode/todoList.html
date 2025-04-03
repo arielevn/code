@@ -81,11 +81,22 @@
         // }
         
         function toggleBtn(event){
+
+        // options of string method:
+            // .charAt: Gives us character at the specified index
+            // .indexOf: not useful
+            // .slice: Gets characters after a specified index (it works) 
+                // 'toggle-101'.slice(7);
+            // .split: Splits on character and return an array 
+                // 'toggle-101'.split('-')[1];
+            // .substr: same as slice but return an array
+                // 'toggle-101'.substr(7);
+
             var position =  event.target.id;
-            if(todos[position.slice(-1)].completed === false){
-                todos[position.slice(-1)].completed = true; 
+            if(todos[position.slice(7)].completed === false){
+                todos[position.slice(7)].completed = true; 
             } else{
-                todos[position.slice(-1)].completed = false;
+                todos[position.slice(7)].completed = false;
             }
             displayTodos();
         }
