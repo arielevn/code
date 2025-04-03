@@ -87,10 +87,13 @@
             // .indexOf: not useful
             // .slice: Gets characters after a specified index (it works) 
                 // 'toggle-101'.slice(7);
-            // .split: Splits on character and return an array 
+            // .split: Splits on character and return an array; versatile within edit, and others 
                 // 'toggle-101'.split('-')[1];
-            // .substr: same as slice but return an array
+                // 'remove-101'.split('-')[1];
+                // 'edot-101'.split('-')[1];
+            // .substr: same as slice but return an array; needs modification for edit
                 // 'toggle-101'.substr(7);
+                // 'edit-101'.substr(5);
 
             var position =  event.target.id;
             if(todos[position.slice(7)].completed === false){
