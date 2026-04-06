@@ -19,3 +19,15 @@ if num % 2 == 0:
     print('this is even number')
 else:
     print('this is not an even number')
+
+print('7 // 3 = 2.7: ', 7 // 3 == int(2.7))
+
+print(type('10') == type(10))
+
+#wrong: print(int('9.8') == 10)
+print(int(float('9.8')) == 10)
+
+hours = input('Enter hours: ')
+rate = input('Enter rate per hour: ')
+print('Your weekly earning is: ', int(hours) * int(rate))
+
