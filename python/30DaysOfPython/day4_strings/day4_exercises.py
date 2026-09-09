@@ -41,4 +41,5 @@ print(f'{"Coding" in company }')
 print(f"{company.replace('Coding', 'Python')}")
 
 #12
-
+x3 = 'Python For Everyone'
+print(f'{x3.replace("Everyone", "All")}')
