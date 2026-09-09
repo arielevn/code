@@ -24,10 +24,19 @@ print('7 // 3 = 2.7: ', 7 // 3 == int(2.7))
 
 print(type('10') == type(10))
 
+#20
 #wrong: print(int('9.8') == 10)
 print(int(float('9.8')) == 10)
 
+#21
 hours = input('Enter hours: ')
 rate = input('Enter rate per hour: ')
 print('Your weekly earning is: ', int(hours) * int(rate))
 
+#22
+years = input('Enter number of years you have lived: ')
+seconds = 3600 * 24 * 365
+life = int(years) * seconds
+print(f'You have lived for {life} seconds.')
+
+#23
