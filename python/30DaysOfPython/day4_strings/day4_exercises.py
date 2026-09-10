@@ -43,3 +43,11 @@ print(f"{company.replace('Coding', 'Python')}")
 #12
 x3 = 'Python For Everyone'
 print(f'{x3.replace("Everyone", "All")}')
+
+#13
+text1 = 'Coding For All'
+print(text1.split())
+
+companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(f'{companies.split(", ")}')
+
