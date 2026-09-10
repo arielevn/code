@@ -48,6 +48,15 @@ print(f'{x3.replace("Everyone", "All")}')
 text1 = 'Coding For All'
 print(text1.split())
 
+#14
 companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
 print(f'{companies.split(", ")}')
 
+#15
+print(f'{text1[0]}')
+
+#16
+print(f'{text1[-1]}')
+
+#17
+print(f'{text1[10]}')
